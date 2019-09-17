@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+
+
 </head>
 <header>
     <!--Navbar Code-->
@@ -107,7 +110,6 @@
                             <div class="d-none d-sm-block ">
                                 <img src="./assets/images/brian-friel-square.jpg" class="mr-3 " width="300" alt="Image">
                             </div>
-
                             <!--Text for Writer 1 Summary-->
                             <div class="media-body">
                                 <h4 class="mt-0 mb-1">Writer 1</h4>
@@ -119,8 +121,6 @@
                                 </a>
                             </div>
                         </li>
-
-
                         <!--Image for First Writer that is displayed on mobile (sm) screens-->
                         <li class="media d-block d-sm-none">
                             <img src="./assets/images/wb-yeats-square.jpg" class="mr-3 w-100" alt="Image">
@@ -130,7 +130,6 @@
                             <div class="d-none d-sm-block ">
                                 <img src="./assets/images/wb-yeats-square.jpg" class="mr-3 " width="300" alt="Image">
                             </div>
-
                             <!--Text for Writer 1 Summary-->
                             <div class="media-body">
                                 <h4 class="mt-0 mb-1">Writer 1</h4>
@@ -142,8 +141,6 @@
                                 </a>
                             </div>
                         </li>
-
-
                         <!--Image for First Writer that is displayed on mobile (sm) screens-->
                         <li class="media d-block d-sm-none">
                             <img src="./assets/images/patrick-kavanagh-square.jpg" class="mr-3 w-100" alt="Image">
@@ -153,7 +150,6 @@
                             <div class="d-none d-sm-block ">
                                 <img src="./assets/images/patrick-kavanagh-square.jpg" class="mr-3 " width="300" alt="Image">
                             </div>
-
                             <!--Text for Writer 1 Summary-->
                             <div class="media-body">
                                 <h4 class="mt-0 mb-1">Writer 1</h4>
@@ -165,9 +161,7 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -184,7 +178,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col">
                     <h2>Writers around Ireland</h2>
                     <div id="map"></div>
                 </div>
@@ -209,16 +203,33 @@
                     <p>To get regular updates on upcoming literary events all around Ireland sign up to our newsletter</p>
                     <!--Main Content of the Page - Contract Form-->
                     <div class="centre-form">
-                        <form>
-                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
-                            <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Let us know if there is one writer you'd like to focus on" required></textarea>
-                            <div class="form-row text-center ">
-                                <div class="col">
-                                    <button type="submit" class="btn btn-secondary">Send Project Details</button>
-                                </div>
-                            </div>
-                        </form>
+                        <!--<form>-->
+                        <!--    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>-->
+                        <!--    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>-->
+                        <!--    <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Let us know if there is one writer you'd like to focus on" required></textarea>-->
+                        <!--    <div class="form-row text-center ">-->
+                        <!--        <div class="col">-->
+                        <!--            <button type="submit" class="btn btn-secondary">Send Project Details</button>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</form>-->
+
+
+
+
+                        <div class="center-form">
+                            <form onsubmit="return sendMail(this);" method="POST">
+                                <!--<form onsubmit="return sendMail(this);">-->
+                                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                                <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                            </form>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -243,60 +254,27 @@
                 <div class="col-12">
                     <ul id="foot" class="row list-inline social-links">
                         <li class="col-6 col-md-3">
-                            <a href="https://twitter.com/neasaocallaghan" target="_blank" class="hvr-fade"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                            <a href="https://twitter.com/#" target="_blank" class="hvr-fade"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
                         </li>
                         <li class="col-6 col-md-3">
-                            <a href="https://www.instagram.com/neasaocallaghan/" target="_blank" class="hvr-fade"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                            <a href="https://www.instagram.com/#" target="_blank" class="hvr-fade"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
                         </li>
                         <li class="col-6 col-md-3">
-                            <a href="https://www.linkedin.com/in/neasa-o-callaghan-79762751/ " target="_blank" class="hvr-fade"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+                            <a href="https://www.linkedin.com/in/# " target="_blank" class="hvr-fade"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
                         </li>
                         <li class="col-6 col-md-3">
-                            <a href="https://www.facebook.com/neasa.o.callaghan" target="_blank" class="hvr-fade"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                            <a href="https://www.facebook.com/#" target="_blank" class="hvr-fade"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        //     function initMap () {
-        //         var map = new google.maps.Map(document.getElementById("map"), {
-        //             zoom: 6,
-        //             center: {
-        //                 lat: 53.382790,
-        //                 lng: -7.707616
-        //             }
-        //         });
-
-        //         var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-        //         var locations = [{
-        //             // Galway
-        //             lat: 53.271361,
-        //             lng: -9.056890
-        //         }, {
-        //             // Monaghan
-        //             lat: 54.2457488,
-        //             lng: -6.9885574
-        //         }, {
-        //             // Sligo
-        //             lat: 54.2683987,
-        //             lng: -8.4982825
-        //         }];
-        //         var markers = locations.map(function(location, i) {
-        //             return new google.maps.Marker({
-        //                 position: location,
-        //                 label: labels[i % labels.length]
-        //             });
-        //         });
-        //         var markerCluster = new MarkerClusterer(map, markers, {
-        //             imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-        //         });
-        //     }
-        //
-    </script>
-
+    
+    <!--My JavaScript Script-->
+    
+    <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!--Popper and Bootstrap-->
@@ -307,9 +285,19 @@
     <!--Google Maps and Marker Cluster-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSLMsUwoMEVGozcD-3HIzQkYGhmwx37g&callback=initMap"></script>
+    
+    <!--JSEmail-->
 
-    <!--My JavaScript Script-->
-    <script src="./assets/js/maps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_TogJB0tfRK922oybFdTcZ");
+            emailjs.send("gmail", "example")
+        })();
+    </script>
+
+
 
 </body>
 
