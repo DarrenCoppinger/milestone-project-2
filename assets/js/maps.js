@@ -174,29 +174,75 @@
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
 
-        var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-        var locations = [{
-            // Galway
-            lat: 53.271361,
-            lng: -9.056890
-        }, {
-            // Monaghan
-            lat: 54.2457488,
-            lng: -6.9885574
-        }, {
-            // Sligo
-            lat: 54.2683987,
-            lng: -8.4982825
-        }];
-        var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
+        var locations = [
+            ["galway", 53.271361, -9.056890],
+            ["Monaghan", 54.2457488, -6.9885574],
+            ["Sligo", 54.2683987, -8.4982825],
+            ["Killarney", 52.0599, -9.5044],
+            ["Donegal", 54.9681842, -7.7611702]
+        ];
+
+        var content = [
+            ["<div>" +
+                "<h3>Galway</h3>" +
+                "<img src='#' width='150 ' height='100 ' alt=''>" +
+                "<p></p>" +
+                "<a href='#'></a>" +
+                "</div>"
+            ],
+            ["<div>" +
+                "<h3>Monaghan</h3>" +
+                "<img src='#' width='150 ' height='100 ' alt=''>" +
+                "<p></p>" +
+                "<a href='#'></a>" +
+                "</div>"
+            ],
+            ["<div>" +
+                "<h3>Sligo</h3>" +
+                "<img src='#' width='150 ' height='100 ' alt=''>" +
+                "<p></p>" +
+                "<a href='#'></a>" +
+                "</div>"
+            ],
+            ["<div>" +
+                "<h3>Killarney</h3>" +
+                "<img src='#' width='150 ' height='100 ' alt=''>" +
+                "<p></p>" +
+                "<a href='#'></a>" +
+                "</div>"
+            ],
+            ["<div>" +
+                "<h3>Donegal</h3>" +
+                "<img src='#' width='150 ' height='100 ' alt=''>" +
+                "<p></p>" +
+                "<a href='#'></a>" +
+                "</div>"
+            ],
+        ];
+        // Initialise Markers on Map 
+        for (i = 0; i < locations.length; i++) {
+            var position = new google.maps.LatLng(locations[i][1], locations[i][2]);
+
+            markers = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: locations[i][0]
             });
-        });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: content[i][0]
+            });
+
+        // Add info window to marker    
+            google.maps.event.addListener(markers,'click', (function(markers, i) {
+                return function() {
+                infoWindow.setContent(content[i][0]);
+                infoWindow.open(map, markers);
+                 };
+            }));
+        }
         var markerCluster = new MarkerClusterer(map, markers, {
             imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
         });
-
     }
     
