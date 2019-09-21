@@ -183,66 +183,91 @@
         ];
 
         var content = [
-            ["<div>" +
-                "<h3>Galway</h3>" +
-                "<img src='#' width='150 ' height='100 ' alt=''>" +
-                "<p></p>" +
-                "<a href='#'></a>" +
-                "</div>"
-            ],
-            ["<div>" +
-                "<h3>Monaghan</h3>" +
-                "<img src='#' width='150 ' height='100 ' alt=''>" +
-                "<p></p>" +
-                "<a href='#'></a>" +
-                "</div>"
-            ],
-            ["<div>" +
-                "<h3>Sligo</h3>" +
-                "<img src='#' width='150 ' height='100 ' alt=''>" +
-                "<p></p>" +
-                "<a href='#'></a>" +
-                "</div>"
-            ],
-            ["<div>" +
-                "<h3>Killarney</h3>" +
-                "<img src='#' width='150 ' height='100 ' alt=''>" +
-                "<p></p>" +
-                "<a href='#'></a>" +
-                "</div>"
-            ],
-            ["<div>" +
-                "<h3>Donegal</h3>" +
-                "<img src='#' width='150 ' height='100 ' alt=''>" +
-                "<p></p>" +
-                "<a href='#'></a>" +
-                "</div>"
-            ],
+            ["<h3>Galway</h3>"],
+            ["<h3>Monaghan</h3>"],
+            ["<h3>Sligo</h3>"],
+            ["<h3>Killarney</h3>"],
+            ["<h3>Donegal</h3>"]
         ];
+        // var content = [
+        //     ["<div>" +
+        //         "<h3>Galway</h3>" +
+        //         "<img src='#' width='150 ' height='100 ' alt=''>" +
+        //         "<p></p>" +
+        //         "<a href='#'></a>" +
+        //         "</div>"
+        //     ],
+        //     ["<div>" +
+        //         "<h3>Monaghan</h3>" +
+        //         "<img src='#' width='150 ' height='100 ' alt=''>" +
+        //         "<p></p>" +
+        //         "<a href='#'></a>" +
+        //         "</div>"
+        //     ],
+        //     ["<div>" +
+        //         "<h3>Sligo</h3>" +
+        //         "<img src='#' width='150 ' height='100 ' alt=''>" +
+        //         "<p></p>" +
+        //         "<a href='#'></a>" +
+        //         "</div>"
+        //     ],
+        //     ["<div>" +
+        //         "<h3>Killarney</h3>" +
+        //         "<img src='#' width='150 ' height='100 ' alt=''>" +
+        //         "<p></p>" +
+        //         "<a href='#'></a>" +
+        //         "</div>"
+        //     ],
+        //     ["<div>" +
+        //         "<h3>Donegal</h3>" +
+        //         "<img src='#' width='150 ' height='100 ' alt=''>" +
+        //         "<p></p>" +
+        //         "<a href='#'></a>" +
+        //         "</div>"
+        //     ],
+        // ];
+        
+        
+                  // var infowindow = new google.maps.InfoWindow({
+            //     content: content[i][0]
+            // });
+
+            // Add info window to marker    
+            // google.maps.event.addListener(markers,'click', (function(markers, i) {
+            //     return function() {
+            //     infoWindow.setContent(content[i]);
+            //     infoWindow.open(map, markers);
+            //      };
+            // }));
+        
         // Initialise Markers on Map 
         for (i = 0; i < locations.length; i++) {
             var position = new google.maps.LatLng(locations[i][1], locations[i][2]);
 
-            markers = new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 position: position,
                 map: map,
                 title: locations[i][0]
             });
 
-            var infowindow = new google.maps.InfoWindow({
-                content: content[i][0]
-            });
+            var infowindow = new google.maps.InfoWindow();
+  
 
-        // Add info window to marker    
-            google.maps.event.addListener(markers,'click', (function(markers, i) {
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
                 return function() {
-                infoWindow.setContent(content[i][0]);
-                infoWindow.open(map, markers);
-                 };
-            }));
+                    infowindow.setContent(content[i][0]);
+                    // infowindow.setOptions({ maxWidth: 200 });
+                    infowindow.open(map, marker);
+                };
+            })(marker, i));
+            // Markers[locations[i][4]] = marker;
         }
-        var markerCluster = new MarkerClusterer(map, markers, {
-            imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-        });
+
+        locate(0);
+
+
+    var markerCluster = new MarkerClusterer(map, markers, {
+        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
     }
     
