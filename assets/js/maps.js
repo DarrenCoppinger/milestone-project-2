@@ -256,11 +256,15 @@
             ["Cathaoir Synge", 53.0843409, -9.6124936],
             ["Lake Isle of Innisfree", 54.2465530, -8.358062],
             ["Benbulbin", 54.3666661, -8.4788218],
-            ["Lissadell House",54.3467148,-8.583131],
+            ["Lissadell House", 54.3467148, -8.583131],
             ["Yeats Building", 54.2721304, -8.4772024],
-            ["Kerry Writers Museum", 52.4447289,  -9.4862804],
+            ["Kerry Writers Museum", 52.4447289, -9.4862804],
             ["John B. Keane's Pub", 52.4470431, -9.4856969],
-            ["Glenties Cemetery - Resting place of Playwright Brian Friel", 54.7866719, -8.2833222]
+            ["Glenties Cemetery - Resting place of Playwright Brian Friel", 54.7866719, -8.2833222],
+            ["James Joyce House", 53.3463009, -6.2838749], 
+            ["James Joyce Tower & Museum", 53.288654, -6.1158117],
+            ["James Joyce Centre", 53.3542008, -6.2599808], 
+            ["Oscar Wilde House", 53.341214, -6.2503741] 
         ];
 
         var content = [
@@ -332,7 +336,30 @@
                 "<p>Resting place of Playwright Brian Friel</p>" +
                 "</div>"
             ],
+            ["", "<div>" +
+                "<h3>James Joyce House</h3>" +
+                "<p> Stately 18 th - century Georgian residence & setting for Joyce 's short story, 'The Dead.'</p>" +
+                "</div>"
+            ],
+            ["James Joyce Tower & Museum", "<div>" +
+                "<h3>James Joyce Tower & Museum</h3>" +
+                "<p>Martello tower containing Joyce memorabilia where the author stayed and his novel Ulysses begins.</p>" +
+                "</div>"
+            ],
+            ["James Joyce Centre", "<div>" +
+                "<h3>James Joyce Centre</h3>" +
+                "<p>The James Joyce Centre is a museum in Dublin, Ireland, dedicated to promoting an understanding of the life and works of James Joyce</p>" +
+                "</div>"
+            ],
+            ["Oscar Wilde House", "<div>" +
+                "<h3>James Joyce Centre</h3>" +
+                "<p>Oscar Wilde 's restored childhood home, known for its Georgian architecture & period furnishings.</p>" +
+                "</div>"
+            ]
         ];
+
+
+
 
         // Initialise Markers on Map 
 
