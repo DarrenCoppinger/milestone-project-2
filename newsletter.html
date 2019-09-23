@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!--JSEmail-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_TogJB0tfRK922oybFdTcZ");
+            // emailjs.send("gmail", "example");
+        })();
+    </script>
+
+</head>
+<header>
+    <!--Navbar Code-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Writers of Ireland</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="./index.html">Home<span class="sr-only">Home</span></a>
+                <a class="nav-item nav-link" href="./writers.html">Writers in Focus<span class="sr-only">Writers in Focus</span></a>
+                <a class="nav-item nav-link" href="./newsletter.html">Newsletter<span class="sr-only">Newsletter</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section id="newsletter">
+        <!--Newsletter Content Divider-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-title">
+                        <span>Newsletter</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>To get regular updates on upcoming literary events all around Ireland sign up to our newsletter</p>
+                    <!--Main Content of the Page - Contract Form-->
+
+
+                    <div class="center-form">
+                        <!--<form onsubmit="return sendMail(this);" method="POST">-->
+                        <form id="myform" onsubmit="return sendMail(this);">
+                            <!--<form onsubmit="return sendMail(this);">-->
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                            <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <!--Footer Content Divider-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-title">
+                        <span>Great Irish Writers</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <!--Social Media Link Buttons-->
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <ul id="foot" class="row list-inline social-links">
+                        <li class="col-6 col-md-3">
+                            <a href="https://twitter.com/#" target="_blank" class="hvr-fade"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="https://www.instagram.com/#" target="_blank" class="hvr-fade"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="https://www.linkedin.com/in/# " target="_blank" class="hvr-fade"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="https://www.facebook.com/#" target="_blank" class="hvr-fade"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--My JavaScript Script-->
+
+    <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Popper and Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!--Google Maps and Marker Cluster-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSLMsUwoMEVGozcD-3HIzQkYGhmwx37g&callback=initMap"></script>
+
+
+
+
+
+</body>
+
+</html>
