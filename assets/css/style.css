@@ -41,7 +41,43 @@ section a:hover {
     background: #ffffff;
 }
 
+/*----------------main----------------*/
+main {
+    margin: 0;
+    padding: 0;
+}
 
+.carousel-container {
+    margin: 0;
+    padding: 0;
+}
+
+.call-out {
+    position: absolute;
+    text-decoration: none;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.call-out a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: .3rem;
+    border: 1px solid #ffffff;
+}
+
+
+.call-out a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #000000;
+    border: 1px solid #000000;
+}
 
 /*----------------footer----------------*/
 
@@ -83,7 +119,12 @@ footer {
     font-size: 0;
     margin: 0;
     padding: 0;
-    background-color: green;
+    background-color: #a5b076;
+}
+
+.social-media-bar {
+    margin: 0;
+    padding: 0;
 }
 
 #foot li {
@@ -124,7 +165,7 @@ footer {
 }
 
 .social-links li a:hover {
-    background-color: #e6cf9e;
+    background-color: #dfd2ae;
     color: #000000;
 }
 
@@ -133,7 +174,29 @@ footer {
 }
 
 
-/*--------------------------------------------Map*/
+/*----------------Map----------------*/
 div#map {
     min-height: 100vh;
+}
+
+
+/*----------------navbar----------------*/
+.bg-color {
+   background-color: #004D44;
+ /*background-color: #a5b076;   */
+}
+
+/*----------------jumbotron----------------*/
+.jumbo-color {
+    background-color: #dfd2ae;
+}
+
+/*----------------form----------------*/
+.form-control {
+    margin-bottom: 30px;
+}
+
+/*----------------writer-in-focus----------------*/
+.writer {
+    margin-bottom: 30px;
 }

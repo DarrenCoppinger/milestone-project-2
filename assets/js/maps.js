@@ -10,13 +10,13 @@
                 {
                     "elementType": "labels.text.fill",
                     "stylers": [{
-                        "color": "#523735"
+                        "color": "#523735"                          //dark brown
                     }]
                 },
                 {
                     "elementType": "labels.text.stroke",
                     "stylers": [{
-                        "color": "#f5f1e6"
+                        "color": "#f5f1e6"                              //cream
                     }]
                 },
                 {
@@ -43,7 +43,7 @@
                     "featureType": "administrative.land_parcel",
                     "elementType": "labels.text.fill",
                     "stylers": [{
-                        "color": "#ae9e90"
+                        "color": "#ae9e90"                              //grey
                     }]
                 },
                 {
@@ -56,7 +56,7 @@
                     "featureType": "landscape.natural",
                     "elementType": "geometry",
                     "stylers": [{
-                        "color": "#dfd2ae"
+                        "color": "#dfd2ae"                              //coffee
                     }]
                 },
                 {
@@ -90,14 +90,14 @@
                     "featureType": "poi.park",
                     "elementType": "geometry.fill",
                     "stylers": [{
-                        "color": "#a5b076"
+                        "color": "#a5b076"                      //cream green
                     }]
                 },
                 {
                     "featureType": "poi.park",
                     "elementType": "labels.text.fill",
                     "stylers": [{
-                        "color": "#447530"
+                        "color": "#447530"                      //dark green
                     }]
                 },
                 {

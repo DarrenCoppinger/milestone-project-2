@@ -25,7 +25,7 @@
 </head>
 <header>
     <!--Navbar Code-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-color">
         <a class="navbar-brand" href="#">Writers of Ireland</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -117,7 +117,7 @@
                         <!--    <div class="d-none d-sm-block ">-->
                         <!--        <img src="./assets/images/brian-friel-square.jpg" class="mr-3 " width="300" alt="Image">-->
                         <!--    </div>-->
-                            <!--Text for Writer 1 Summary-->
+                        <!--Text for Writer 1 Summary-->
                         <!--    <div class="media-body">-->
                         <!--        <h4 class="mt-0 mb-1">Writer 1</h4>-->
                         <!--        <p>Text</p>-->
@@ -131,12 +131,12 @@
                         <!--Image for First Writer that is displayed on mobile (sm) screens-->
 
 
-<!--WB Yeats-->
-                        <li class="media d-block d-sm-none">
+                <!--WB Yeats-->
+                        <li class="media d-block d-sm-none writer">
                             <img src="./assets/images/wb-yeats-square.jpg" class="mr-3 w-100" alt="Image">
                         </li>
                         <!--Image for First Writer that is displayed on screens larger than mobile (sm)-->
-                        <li class="media">
+                        <li class="media writer">
                             <div class="d-none d-sm-block ">
                                 <img src="./assets/images/wb-yeats-square.jpg" class="mr-3 " width="300" alt="Image">
                             </div>
@@ -151,12 +151,14 @@
                                 </a>
                             </div>
                         </li>
+                        
+                <!--James Joyce-->
                         <!--Image for First Writer that is displayed on mobile (sm) screens-->
-                        <li class="media d-block d-sm-none">
+                        <li class="media d-block d-sm-none writer">
                             <img src="./assets/images/james-joyce-square.jpg" class="mr-3 w-100" alt="James Joyce Image">
                         </li>
                         <!--Image for First Writer that is displayed on screens larger than mobile (sm)-->
-                        <li class="media">
+                        <li class="media writer">
                             <div class="d-none d-sm-block ">
                                 <img src="./assets/images/james-joyce-square.jpg" class="mr-3 " width="300" alt="James Joyce Image">
                             </div>
@@ -171,6 +173,8 @@
                                 </a>
                             </div>
                         </li>
+                        
+                        
                     </ul>
                 </div>
             </div>
@@ -178,7 +182,7 @@
     </section>
 
     <!--<section id="newsletter">-->
-        <!--Newsletter Content Divider-->
+    <!--Newsletter Content Divider-->
     <!--    <div class="container">-->
     <!--        <div class="row">-->
     <!--            <div class="col">-->
@@ -193,13 +197,13 @@
     <!--        <div class="row">-->
     <!--            <div class="col-12">-->
     <!--                <p>To get regular updates on upcoming literary events all around Ireland sign up to our newsletter</p>-->
-                    <!--Main Content of the Page - Contract Form-->
+    <!--Main Content of the Page - Contract Form-->
 
 
     <!--                <div class="center-form">-->
-                        <!--<form onsubmit="return sendMail(this);" method="POST">-->
+    <!--<form onsubmit="return sendMail(this);" method="POST">-->
     <!--                    <form id="myform" onsubmit="return sendMail(this);">-->
-                            <!--<form onsubmit="return sendMail(this);">-->
+    <!--<form onsubmit="return sendMail(this);">-->
     <!--                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>-->
     <!--                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>-->
     <!--                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>-->
@@ -208,18 +212,18 @@
     <!--                </div>-->
 
 
-                    <!--<div class="centre-form">-->
-                    <!--<form>-->
-                    <!--    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>-->
-                    <!--    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>-->
-                    <!--    <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Let us know if there is one writer you'd like to focus on" required></textarea>-->
-                    <!--    <div class="form-row text-center ">-->
-                    <!--        <div class="col">-->
-                    <!--            <button type="submit" class="btn btn-secondary">Send Project Details</button>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</form>-->
-                    <!--</div>-->
+    <!--<div class="centre-form">-->
+    <!--<form>-->
+    <!--    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>-->
+    <!--    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>-->
+    <!--    <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Let us know if there is one writer you'd like to focus on" required></textarea>-->
+    <!--    <div class="form-row text-center ">-->
+    <!--        <div class="col">-->
+    <!--            <button type="submit" class="btn btn-secondary">Send Project Details</button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</form>-->
+    <!--</div>-->
 
     <!--            </div>-->
     <!--        </div>-->
@@ -228,36 +232,37 @@
     <!--FOOTER-->
     <footer>
         <!--Footer Content Divider-->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="section-title">
-                        <span>Follow Us</span>
-                    </h3>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--        <div class="col">-->
+        <!--            <h3 class="section-title">-->
+        <!--                <span>Follow Us</span>-->
+        <!--            </h3>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
 
         <!--Social Media Link Buttons-->
-        <div class="container-fluid">
+        <div class="container-fluid social-media-bar">
             <div class="row no-gutters">
                 <div class="col-12">
                     <ul id="foot" class="row list-inline social-links">
-                        <li class="col-6 col-md-3">
+                        <li class="col-6 col-md-3 footeritem">
                             <a href="https://twitter.com/#" target="_blank" class="hvr-fade"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
                         </li>
-                        <li class="col-6 col-md-3">
+                        <li class="col-6 col-md-3 footeritem">
                             <a href="https://www.instagram.com/#" target="_blank" class="hvr-fade"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
                         </li>
-                        <li class="col-6 col-md-3">
+                        <li class="col-6 col-md-3 footeritem">
                             <a href="https://www.linkedin.com/in/# " target="_blank" class="hvr-fade"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
                         </li>
-                        <li class="col-6 col-md-3">
+                        <li class="col-6 col-md-3 footeritem">
                             <a href="https://www.facebook.com/#" target="_blank" class="hvr-fade"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 
