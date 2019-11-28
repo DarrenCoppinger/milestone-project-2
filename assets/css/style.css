@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,500,700&display=swap');
 
-
-
 /*----------------section----------------*/
 
 section {
@@ -64,7 +62,7 @@ main {
 
 .call-out a {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     padding: 1rem 1rem;
     border-radius: .3rem;
@@ -74,7 +72,7 @@ main {
 
 .call-out a:hover {
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #000000;
     border: 1px solid #000000;
 }
@@ -119,7 +117,8 @@ footer {
     font-size: 0;
     margin: 0;
     padding: 0;
-    background-color: #a5b076;
+    /*background-color: #a5b076;*/
+    background-color: #008559;
 }
 
 .social-media-bar {
@@ -143,14 +142,14 @@ footer {
 .footeritem a {
     width: 100%;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     height: 60px;
 }
 
 .footeritem a i {
     padding-top: 10px;
     display: block;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -165,8 +164,8 @@ footer {
 }
 
 .social-links li a:hover {
-    background-color: #dfd2ae;
-    color: #000000;
+    background-color: #002c85;
+    color: #ffffff;
 }
 
 .list-inline-item:not(:last-child) {
@@ -182,8 +181,9 @@ div#map {
 
 /*----------------navbar----------------*/
 .bg-color {
-   background-color: #004D44;
- /*background-color: #a5b076;   */
+    background-color: #008559;
+    /*background-color: #004D44;*/
+    /*background-color: #a5b076;   */
 }
 
 /*----------------jumbotron----------------*/

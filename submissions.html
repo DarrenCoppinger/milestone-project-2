@@ -36,9 +36,9 @@
   </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="./index.html">Home<span class="sr-only">Home</span></a>
+                <a class="nav-item nav-link" href="./index.html">Home<span class="sr-only">Home</span></a>
                 <a class="nav-item nav-link" href="./about.html">About<span class="sr-only">About</span></a>
-                <a class="nav-item nav-link" href="./submissions.html">Submissions<span class="sr-only">Submissions</span></a>
+                <a class="nav-item nav-link active" href="./submissions.html">Submissions<span class="sr-only">Submissions</span></a>
                 <!--<a class="nav-item nav-link" href="./writers.html">Writers in Focus<span class="sr-only">Writers in Focus</span></a>-->
             </div>
         </div>
@@ -46,93 +46,45 @@
 </header>
 
 <body>
-    <main>
-        <!--Carousel of writer images-->
-        <div class="container-fluid no-gutters">
-            <div class=" row">
-                <div class="col-12 carousel-container">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/images/brian-friel.jpg" class="d-block mx-auto w-100" alt="Brian Friel Image">
-                                <!--<div class="carousel-caption rounded d-none d-md-block">-->
-                                <!--    <h5>Brian Friel</h5>-->
-                                <!--    <p>Test1</p>-->
-                                <!--    <p>Text2<a href="#" target="_blank">Link</a></p>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/james-joyce.jpg" class="d-block mx-auto w-100" alt="James Joyce Image">
-                                <!--<div class="carousel-caption rounded d-none d-md-block">-->
-                                <!--    <h5>James Joyce</h5>-->
-                                <!--    <p>Test1</p>-->
-                                <!--    <p>Text2<a href="#" target="_blank">Link</a></p>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="./assets/images/partick-kavanagh.jpg" class="d-block mx-auto w-100" alt="Patrick Kavanagh Image">
-                                <!--<div class="carousel-caption rounded d-none d-md-block">-->
-                                <!--    <h5>Patrick Kavanagh</h5>-->
-                                <!--    <p>Test1</p>-->
-                                <!--    <p>Text2<a href="#" target="_blank">Link</a></p>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/tom-murphy.jpg" class="d-block mx-auto w-100" alt="Tom Murphy Image">
-                                <!--<div class="carousel-caption rounded d-none d-md-block">-->
-                                <!--    <h5>Tom Murphy</h5>-->
-                                <!--    <p>Test1</p>-->
-                                <!--    <p>Text2<a href="#" target="_blank">Link</a></p>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/wb-yeats.jpg" class="d-block mx-auto w-100" alt="Image 1">
-                                <!--<div class="carousel-caption rounded d-none d-md-block">-->
-                                <!--    <h5>Writer1</h5>-->
-                                <!--    <p>Test1</p>-->
-                                <!--    <p>Text2<a href="#" target="_blank">Link</a></p>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                         </a>
-                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                         </a>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col call-out">
-                            <a href="#" class="hvr-fade">
-                                <h1>Writers of Ireland</h1>
-                                <p>A geographical guide to important literaty locations around Ireland</p>
-                                <p>Click here to learn more about our website!</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <section id="locations">
+    <section id="newsletter">
+        <!--Newsletter Content Divider-->
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Explore the map below to discover literary locations all over Ireland!</h2>
-                    <p class="lead">Click on our interactive map to discover locations asscosiated with Ireland's greatest writers</p>
-                    <hr class="my-4">
-                    <div id="map"></div>
+                    <h3 class="section-title">
+                        <span>Submit new locations</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>To get regular updates on upcoming literary events all around Ireland sign up to our newsletter</p>
+                    <!--Main Content of the Page - Contract Form-->
+
+
+                    <div class="center-form">
+                        <!--<form onsubmit="return sendMail(this);" method="POST">-->
+                        <form id="myform" onsubmit="return sendMail(this);">
+                            <!--<form onsubmit="return sendMail(this);">-->
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Tell us what writers you are interested in" required></textarea>
+                            <!--<button type="submit" class="btn btn-secondary center-block">Subscribe</button>-->
+                            <div class="form-row text-center ">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <!--FOOTER-->
     <footer>
         <!--Footer Content Divider-->
@@ -183,6 +135,10 @@
     <!--Google Maps and Marker Cluster-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSLMsUwoMEVGozcD-3HIzQkYGhmwx37g&callback=initMap"></script>
+
+
+
+
 
 </body>
 
