@@ -265,7 +265,7 @@
             ["James Joyce Tower & Museum", 53.288654, -6.1158117],
             ["James Joyce Centre", 53.3542008, -6.2599808],
             ["Oscar Wilde House", 53.341214, -6.2503741],
-            ["Kilcolman Castle",52.250380, -8.610485]
+            ["Kilcolman Castle", 52.250380, -8.610485]
         ];
 
         var content = [
@@ -332,9 +332,7 @@
             ["Kerry Writers Museum", "<div>" +
                 "<h3>Kerry Writers Museum</h3>" +
                 "<p>Kerry Writers’ Museum collects, safeguards, holds in trust, displays and interprets a variety of material and objects relating to the rich literary heritage of County Kerry, and the cultural, social & political heritage of Listowel & North Kerry.</p>" +
-                "<p> <a class='btn btn-sm' href='' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a> </p>" +
-                
-                                "<p>For more information <a href='http://www.kerrywritersmuseum.com' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p>For more information <a href='http://www.kerrywritersmuseum.com' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
                 "<p><img src='./assets/images/kerry-writers-museum.jpg' class='rounded mx-auto d-block' alt='Kerry Writers Museum image'></p>" +
                 "</div>"
             ],
@@ -350,7 +348,7 @@
                 "<p>Resting place of Playwright Brian Friel</p>" +
                 "</div>"
             ],
-            ["", "<div>" +
+            ["James Joyce House", "<div>" +
                 "<h3>James Joyce House</h3>" +
                 "<p> Stately 18 th - century Georgian residence & setting for Joyce 's short story, 'The Dead.'</p>" +
                 "</div>"
@@ -358,26 +356,30 @@
             ["James Joyce Tower & Museum", "<div>" +
                 "<h3>James Joyce Tower & Museum</h3>" +
                 "<p>Martello tower containing Joyce memorabilia where the author stayed and his novel Ulysses begins.</p>" +
+                "<p>For more information <a href='http://www.gokerry.ie/businesses/john-b-keanes-bar/' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p><img src='./assets/images/james-joyce-tower-and-museum.jpg' class='rounded mx-auto d-block' alt='ames Joyce Tower & Museum image'></p>" +
                 "</div>"
             ],
             ["James Joyce Centre", "<div>" +
                 "<h3>James Joyce Centre</h3>" +
                 "<p>The James Joyce Centre is a museum in Dublin, Ireland, dedicated to promoting an understanding of the life and works of James Joyce</p>" +
+                "<p>For more information <a href='https://jamesjoyce.ie/' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p><img src='./assets/images/james-joyce-centre.jpg' class='rounded mx-auto d-block' alt='ames Joyce Tower & Museum image'></p>" +
                 "</div>"
             ],
             ["Oscar Wilde House", "<div>" +
                 "<h3>James Joyce Centre</h3>" +
                 "<p>Oscar Wilde 's restored childhood home, known for its Georgian architecture & period furnishings.</p>" +
+                "<p>For more information <a href='https://www.tripadvisor.ie/Attraction_Review-g186605-d17456678-Reviews-Oscar_Wilde_House-Dublin_County_Dublin.html' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p>For information on an Oscar Wilde Tour of Dublin <a href='https://www.visitdublin.com/wilde-days-and-nights-in-dublin-city' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p><img src='./assets/images/oscar-wilde-house.jpg' class='rounded mx-auto d-block' alt='ames Joyce Tower & Museum image'></p>" +
                 "</div>"
             ],
             ["Kilcolman Castle", "<div>" +
                 "<h3>Kilcolman Castle</h3>" +
                 "<p>Kilcolman Castle is a tower located in County Cork. It was once the residence of the poet Edmund Spenser.</p>" +
-                  "<p>For more information <a href='https://www.libraryireland.com/IrishPictures/IV-Kilcolman-Castle.php' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
+                "<p>For more information <a href='https://www.libraryireland.com/IrishPictures/IV-Kilcolman-Castle.php' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
                 "<p><img src='./assets/images/kilcolman-castle.jpg' class='rounded mx-auto d-block' alt='Kilcolman Castle'></p>" +
-                
-                
-                
                 "</div>"
             ]
         ];
