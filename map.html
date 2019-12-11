@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
@@ -24,43 +24,74 @@
     </script>
 
 </head>
-<header>
-    <!--Navbar Code-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-color">
-        <!--Navbar Logo-->
-        <!--<a href="#"><img src="/assets/images/irish-harp.png" alt="Logo image"></a>-->
-        <a href="#" class="navbar-brand"><img class="mr-5" src="./assets/images/irish-harp.png" height ="50" alt="Logo image">Writers of Ireland</a>
-        <!--Navbar Logo-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./index.html">Home<span class="sr-only">Home</span></a>
-                <a class="nav-item nav-link" href="./map.html">Map<span class="sr-only">Map</span></a>
-                <a class="nav-item nav-link" href="./submissions.html">Submissions<span class="sr-only">Submissions</span></a>
-                <!--<a class="nav-item nav-link" href="./writers.html">Writers in Focus<span class="sr-only">Writers in Focus</span></a>-->
-            </div>
-        </div>
-    </nav>
-</header>
 
 <body>
-    <section id="locations">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Explore the map below to discover literary locations all over Ireland!</h2>
-                    <p class="lead">Click on our interactive map to discover locations asscosiated with Ireland's greatest writers</p>
-                    <hr class="my-4">
-                    <div id="map"></div>
+    <header>
+        <!--Navbar Code-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-color">
+            <!--Navbar Logo-->
+            <!--<a href="#"><img src="/assets/images/irish-harp.png" alt="Logo image"></a>-->
+            <a href="#" class="navbar-brand"><img class="mr-5" src="./assets/images/irish-harp.png" height ="50" alt="Logo image">Writers of Ireland</a>
+            <!--Navbar Logo-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="./index.html">Home<span class="sr-only">Home</span></a>
+                    <a class="nav-item nav-link" href="./map.html">Map<span class="sr-only">Map</span></a>
+                    <a class="nav-item nav-link" href="./submissions.html">Submissions<span class="sr-only">Submissions</span></a>
+                    <!--<a class="nav-item nav-link" href="./writers.html">Writers in Focus<span class="sr-only">Writers in Focus</span></a>-->
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
 
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Explore the map below to discover literary locations all over Ireland!</h2>
+                        <p class="lead">Click on our interactive map to discover locations asscosiated with Ireland's greatest writers</p>
+                        <hr class="my-4">
+                        <div class="pac-card" id="pac-card">
+                            <div>
+                                <div id="title">
+                                    Autocomplete search
+                                </div>
+                                <div id="type-selector" class="pac-controls">
+                                    <input type="radio" name="type" id="changetype-all" checked="checked">
+                                    <label for="changetype-all">All</label>
 
+                                    <input type="radio" name="type" id="changetype-establishment">
+                                    <label for="changetype-establishment">Establishments</label>
+
+                                    <input type="radio" name="type" id="changetype-address">
+                                    <label for="changetype-address">Addresses</label>
+
+                                    <input type="radio" name="type" id="changetype-geocode">
+                                    <label for="changetype-geocode">Geocodes</label>
+                                </div>
+                                <div id="strict-bounds-selector" class="pac-controls">
+                                    <input type="checkbox" id="use-strict-bounds" value="">
+                                    <label for="use-strict-bounds">Strict Bounds</label>
+                                </div>
+                            </div>
+                            <div id="pac-container">
+                                <input id="pac-input" type="text" placeholder="Enter a location">
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                        <!--<div id="infowindow-content">-->
+                        <!--  <img src="" width="16" height="16" id="place-icon">-->
+                        <!--  <span id="place-name"  class="title"></span><br>-->
+                        <!--  <span id="place-address"></span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!--FOOTER-->
     <footer>
         <!--Footer Content Divider-->
@@ -110,7 +141,7 @@
 
     <!--Google Maps and Marker Cluster-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSLMsUwoMEVGozcD-3HIzQkYGhmwx37g&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArSLMsUwoMEVGozcD-3HIzQkYGhmwx37g&libraries=places&callback=initMap"></script>
 
 </body>
 

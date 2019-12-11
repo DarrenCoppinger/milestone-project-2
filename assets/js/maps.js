@@ -236,19 +236,6 @@
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
 
-        // var locations = [
-        //     { lat: 53.2709613, lng: -9.0531041 }, //"Druid Theatre Company - Mick Lally Theatre"
-        //     { lat: 53.2730267, lng: -9.0546251 }, //"Nora Barnacle's House
-        //     { lat: 53.1031496, lng: -8.7750506 }, //"Thoor Ballylee Yeats Tower" ,
-        //     { lat: 53.0843409, lng: -9.6124936 }, //"Cathaoir Synge"
-        //     { lat: 54.2465530, lng: -8.358062 }, //"Lake Isle of Innisfree" , 
-        //     { lat: 54.3666661, lng: -8.4788218 }, //"Benbulbin", ,
-        //     { lat: 53.2713610, lng: -9.056890 }, //"Lissadell House"
-        //     { lat: 54.2721304, lng: -8.4772024 }, //"Yeats Building" ,
-        //     { lat: 52.4447289, lng: -9.4862804 }, //"Kerry Writers Museum"
-        //     { lat: 52.4470431, lng: -9.4856969 }, //"John B. Keane's Pub"
-        //     { lat: 54.7866719, lng: -8.2833222 } //"Glenties Cemetery - Resting place of Playwright Brian Friel"
-        // ];
         var locations = [
             ["Druid Theatre Company - Mick Lally Theatre", 53.2709613, -9.0531041],
             ["Nora Barnacle's House", 53.2730267, -9.0546251],
@@ -383,68 +370,6 @@
                 "</div>"
             ]
         ];
-
-
-
-
-        // Initialise Markers on Map 
-
-        // var position = new google.maps.LatLng(locations[i][1], locations[i][2]);
-
-        // var marker = new google.maps.Marker({
-        //     position: position,
-        //     map: map,
-        //     title: locations[i][0]
-        // });
-
-
-        // // Mark 1
-        // var marker = locations.map(function(location, i) {
-        //     return new google.maps.Marker({
-        //         position: location,
-        //         map: map,
-        //         title: content[i][0]
-        //     });
-        // });
-        // var gmarker = [];
-        // var infowindow = new google.maps.InfoWindow();
-        // google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        //     return function() {
-        //         infowindow.setContent(content[i][1]);
-        //         // infowindow.setOptions({ maxWidth: 200 });
-        //         infowindow.open(map, marker);
-        //     };
-        // })(marker, i));
-        // gmarker.push(marker);
-
-        // var markerCluster = new MarkerClusterer(map, gmarker, {
-        //     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-        // });
-
-        // // Mark 2
-        // var gmarker = [];
-        // var infowindow = new google.maps.InfoWindow();
-        // for (i = 0; i < locations.length; i++) {
-        //     var marker = new google.maps.Marker({
-        //         position: locations[i][0],
-        //         map: map,
-        //         title: content[i][0]
-        //     });
-
-        //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        //         return function() {
-        //             infowindow.setContent(content[i][1]);
-        //             // infowindow.setOptions({ maxWidth: 200 });
-        //             infowindow.open(map, marker);
-        //         };
-        //     })(marker, i));
-        //     gmarker.push(marker);
-        // }
-
-        // var markerCluster = new MarkerClusterer(map, gmarker, {
-        //     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-        // });
-        // Mark 3
 
         var gmarkers = [];
         var infowindow = new google.maps.InfoWindow({});

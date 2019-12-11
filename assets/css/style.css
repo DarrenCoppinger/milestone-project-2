@@ -40,10 +40,13 @@ section a:hover {
 }
 
 /*----------------main----------------*/
+
 main {
     margin: 0;
-    padding: 0;
+    padding: 0 0 60px;
 }
+
+/*----------------main----------------*/
 
 .carousel-container {
     margin: 0;
@@ -83,9 +86,14 @@ footer {
     color: #000000;
     margin: 0;
     padding: 0;
-    position: static;
+    /*position: static;*/
     bottom: 0;
     left: 0;
+
+    position: absolute;
+    /*height: 60px;*/
+    width: 100%;
+
 }
 
 .footerbar {
@@ -174,12 +182,14 @@ footer {
 
 
 /*----------------Map----------------*/
+
 div#map {
     min-height: 100vh;
 }
 
 
 /*----------------navbar----------------*/
+
 .bg-color {
     background-color: #008559;
     /*background-color: #004D44;*/
@@ -187,16 +197,80 @@ div#map {
 }
 
 /*----------------jumbotron----------------*/
+
 .jumbo-color {
     background-color: #dfd2ae;
 }
 
 /*----------------form----------------*/
+
 .form-control {
     margin-bottom: 30px;
 }
 
 /*----------------writer-in-focus----------------*/
+
 .writer {
     margin-bottom: 30px;
 }
+
+/*-----------------HTML------------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*-----------------Body------------------*/
+
+body {
+    margin: 0 0 60px;
+}
+
+/*@media(max-width: 768px) {*/
+/*    body {*/
+/*        margin: 0 0 120px;*/
+/*    }*/
+/*}*/
+
+/*----------------PAC----------------*/
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
