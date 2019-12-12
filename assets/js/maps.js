@@ -220,7 +220,6 @@
                 }
             ], { name: "Styled Map" });
 
-
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
             center: {
@@ -235,8 +234,6 @@
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
-        
-        
         
         // Autocomplete Start
         
@@ -421,6 +418,7 @@
             ["Glenties Cemetery - Resting place of Playwright Brian Friel", "<div>" +
                 "<h3>Glenties Cemetery</h3>" +
                 "<p>Resting place of Playwright Brian Friel</p>" +
+                "<p><img src='./assets/images/brian-friel-square.jpg' class='rounded mx-auto d-block' alt='Brian Friel image'></p>" +
                 "</div>"
             ],
             ["James Joyce House", "<div>" +
