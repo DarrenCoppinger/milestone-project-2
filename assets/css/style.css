@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Special+Elite&display=swap');
-
 /*----------------section----------------*/
 
 section {
@@ -46,7 +45,26 @@ main {
     padding: 0 0 60px;
 }
 
-/*----------------main----------------*/
+
+/*-----------------HTML------------------*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*-----------------Body------------------*/
+
+body {
+    margin: 0 0 60px;
+}
+
+.callout {
+    font-family: "Special+Elite", cursive;
+    font-size: 18px;
+}
+
+/*----------------carousel----------------*/
 
 .carousel-container {
     margin: 0;
@@ -172,7 +190,8 @@ footer {
 }
 
 .social-links li a:hover {
-    background-color: #002c85;
+    /*background-color: #002c85;*/
+    background-color: #A39161;
     color: #ffffff;
 }
 
@@ -189,7 +208,9 @@ footer {
 }
 
 /*#map {*/
+
 /*    height: 100%;*/
+
 /*}*/
 
 /*----------------navbar----------------*/
@@ -211,35 +232,6 @@ footer {
 .form-control {
     margin-bottom: 30px;
 }
-
-/*----------------writer-in-focus----------------*/
-
-.writer {
-    margin-bottom: 30px;
-}
-
-/*-----------------HTML------------------*/
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-/*-----------------Body------------------*/
-
-body {
-    margin: 0 0 60px;
-}
-
-/*@media(max-width: 768px) {*/
-
-/*    body {*/
-
-/*        margin: 0 0 120px;*/
-
-/*    }*/
-
-/*}*/
 
 /*----------------PAC----------------*/
 
@@ -294,5 +286,5 @@ body {
 }
 
 #infowindow-content {
-        display: inline;
-      }
+    display: inline;
+}
