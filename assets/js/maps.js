@@ -458,7 +458,7 @@
         ];
 
         var gmarkers = [];
-        var infowindow = new google.maps.InfoWindow({});
+        var ginfowindow = new google.maps.InfoWindow({});
         for (var i = 0; i < locations.length; i++) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -468,8 +468,8 @@
 
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                 return function() {
-                    infowindow.setContent(content[i][1]);
-                    infowindow.open(map, marker);
+                    ginfowindow.setContent(content[i][1]);
+                    ginfowindow.open(map, marker);
                 };
             })(marker, i));
             gmarkers.push(marker);

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Special+Elite&display=swap');
-/*----------------section----------------*/
 
+
+/*----------------padding/margins/text----------------s*/
+row {
+    margin-left: 0;
+    margin-right: 0;
+}
 section {
     /*font-family: "Playfair+Display", serif;*/
     /*font-size: 18px;*/
@@ -12,7 +17,6 @@ section a {
     text-decoration: none;
     /*color: #f7c047;*/
 }
-
 
 section a:hover {
     text-decoration: none;
@@ -38,31 +42,26 @@ section a:hover {
     background: #ffffff;
 }
 
-/*----------------main----------------*/
-
 main {
     margin: 0;
     padding: 0 0 60px;
 }
 
 
-/*-----------------HTML------------------*/
-
 html {
     position: relative;
     min-height: 100%;
 }
 
-/*-----------------Body------------------*/
 
 body {
     margin: 0 0 60px;
 }
 
-.infomation {
-    font-family: "Special+Elite", cursive;
-    /*font-weight: 400;*/
-    /*font-size: 40px;*/
+.information {
+    font-family: "Special Elite", cursive;
+    font-weight: 400;
+    font-size: 40px;
 }
 
 /*----------------carousel----------------*/
