@@ -2,9 +2,9 @@
 /*----------------section----------------*/
 
 section {
-    font-family: "Playfair+Display", serif;
-    font-size: 18px;
-    font-weight: 400;
+    /*font-family: "Playfair+Display", serif;*/
+    /*font-size: 18px;*/
+    /*font-weight: 400;*/
     margin: 25px 0px;
 }
 
@@ -59,9 +59,10 @@ body {
     margin: 0 0 60px;
 }
 
-.callout {
+.infomation {
     font-family: "Special+Elite", cursive;
-    font-size: 18px;
+    /*font-weight: 400;*/
+    /*font-size: 40px;*/
 }
 
 /*----------------carousel----------------*/
@@ -207,18 +208,10 @@ footer {
     /*display: inline;*/
 }
 
-/*#map {*/
-
-/*    height: 100%;*/
-
-/*}*/
-
 /*----------------navbar----------------*/
 
 .bg-color {
     background-color: #008559;
-    /*background-color: #004D44;*/
-    /*background-color: #a5b076;   */
 }
 
 /*----------------jumbotron----------------*/
