@@ -17,12 +17,14 @@ section {
 
 section a {
     text-decoration: none;
-    /*color: #f7c047;*/
+    /*color: #008559;*/
 }
 
-section a:hover {
+.btn:hover {
+    color: #A39161;
+    background-color: #008559;
+    border-color: #e6cf9e;
     text-decoration: none;
-    /*color: #e6cf9e;*/
 }
 
 .section-title {
@@ -93,7 +95,7 @@ body {
 
 footer {
     color: #000000;
-    margin: 0;
+    margin: 50px 0 0;
     padding: 0;
     bottom: 0;
     left: 0;
@@ -183,6 +185,10 @@ footer {
 
 .jumbo-color {
     background-color: #dfd2ae;
+}
+
+.jumbotron {
+    margin-bottom: 75px
 }
 
 /*----------------form----------------*/
