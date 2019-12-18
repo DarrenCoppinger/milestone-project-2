@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Special+Elite&display=swap');
 
 
 /*----------------padding/margins/text----------------s*/
+
 row {
     margin-left: 0;
     margin-right: 0;
 }
+
 section {
-    /*font-family: "Playfair+Display", serif;*/
-    /*font-size: 18px;*/
-    /*font-weight: 400;*/
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
     margin: 25px 0px;
 }
 
@@ -25,7 +27,7 @@ section a:hover {
 
 .section-title {
     color: #000000;
-    font-family: "Playfair+Display", serif;
+    font-family: "Special Elite", cursive;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 2px;
@@ -58,10 +60,22 @@ body {
     margin: 0 0 60px;
 }
 
+.title {
+    font-family: "Special Elite", cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
 .information {
     font-family: "Special Elite", cursive;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.nav-item {
+    font-family: "Special Elite", cursive;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 /*----------------carousel----------------*/
@@ -71,79 +85,29 @@ body {
     padding: 0;
 }
 
-.call-out {
-    position: absolute;
-    text-decoration: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-}
-
-.call-out a {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    padding: 1rem 1rem;
-    border-radius: .3rem;
-    border: 1px solid #ffffff;
-}
-
-
-.call-out a:hover {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000000;
-    border: 1px solid #000000;
-}
-
 /*----------------footer----------------*/
 
 footer {
     color: #000000;
     margin: 0;
     padding: 0;
-    /*position: static;*/
     bottom: 0;
     left: 0;
-
     position: absolute;
     /*height: 60px;*/
     width: 100%;
-
 }
 
 .footerbar {
     padding: 0;
 }
 
-.footer-title {
-    color: #000000;
-    font-family: "Playfair+Display", serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    border-top: 1px solid #000000;
-    padding: 0 10px;
-}
-
-.footer-title span {
-    position: relative;
-    top: -7px;
-    padding: 0 10px;
-    background: #ffffff;
-}
-
 .social-links {
-    font-family: "Playfair+Display", serif;
+    font-family: "Special Elite", cursive;
     font-weight: 400;
     font-size: 0;
     margin: 0;
     padding: 0;
-    /*background-color: #a5b076;*/
     background-color: #008559;
 }
 
@@ -190,7 +154,6 @@ footer {
 }
 
 .social-links li a:hover {
-    /*background-color: #002c85;*/
     background-color: #A39161;
     color: #ffffff;
 }
@@ -204,7 +167,6 @@ footer {
 
 #map {
     min-height: 100vh;
-    /*display: inline;*/
 }
 
 /*----------------navbar----------------*/
