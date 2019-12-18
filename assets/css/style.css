@@ -12,7 +12,7 @@ section {
     font-family: "Oswald", sans-serif;
     font-size: 18px;
     font-weight: 300;
-    margin: 25px 0px;
+    margin: 50px 0px;
 }
 
 section a {
@@ -45,7 +45,7 @@ section a:hover {
 }
 
 .section-title-box {
-    margin: 40px 0 0;
+    margin: 0;
 }
 
 main {
@@ -245,4 +245,14 @@ footer {
 
 #infowindow-content {
     display: inline;
+}
+
+/*----------------Media Queries----------------s*/
+
+/*Button width inside navbar-toggler-icon*/
+
+@media(max-width: 576px) {
+    .title {
+        font-size: 20px;
+    }
 }

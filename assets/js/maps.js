@@ -222,23 +222,34 @@
 
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
-            scaleControl: true,
+            // scaleControl: true,
             center: {
                 lat: 53.382790,
                 lng: -7.707616
             },
+            // mapTypeControlOptions: false
             mapTypeControlOptions: {
-                mapTypeIds: ['satellite', 'styled_map']
+                mapTypeIds: ['satellite', 'styled_map'],
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
+            fullscreenControl: false,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_CENTER
+            },
+            streetViewControl: true,
+            streetViewControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_CENTER
             }
         });
+
+
 
         var allIreland = new google.maps.LatLngBounds(
             new google.maps.LatLng(50.999929, -10.854492),
             new google.maps.LatLng(55.354135, -5.339355));
 
         map.fitBounds(allIreland);
-
-
 
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
@@ -258,7 +269,8 @@
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+        // map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
 
         var autocomplete = new google.maps.places.Autocomplete(input, {
             bounds: allIreland,
