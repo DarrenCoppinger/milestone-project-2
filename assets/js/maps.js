@@ -234,17 +234,24 @@
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
-        
+
         // Autocomplete Start
-        
+
         var card = document.getElementById('pac-card');
         var input = document.getElementById('pac-input');
+
+        // Restrict Search to just Ireland
+
+        var options = {
+            componentRestrictions: { country: 'ie' }
+        };
+
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
-        var autocomplete = new google.maps.places.Autocomplete(input);
+        var autocomplete = new google.maps.places.Autocomplete(input, options);
 
         // Bind the map's bounds (viewport) property to the autocomplete object,
         // so that the autocomplete requests use the current map bounds for the
@@ -259,53 +266,54 @@
         var infowindowContent = document.getElementById('infowindow-content');
         infowindow.setContent(infowindowContent);
         var marker = new google.maps.Marker({
-          map: map,
-          anchorPoint: new google.maps.Point(0, -29)
+            map: map,
+            anchorPoint: new google.maps.Point(0, -29)
         });
 
         autocomplete.addListener('place_changed', function() {
-          infowindow.close();
-          marker.setVisible(false);
-          var place = autocomplete.getPlace();
-          if (!place.geometry) {
-            // User entered the name of a Place that was not suggested and
-            // pressed the Enter key, or the Place Details request failed.
-            window.alert("No details available for input: '" + place.name + "'");
-            return;
-          }
+            infowindow.close();
+            marker.setVisible(false);
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                // User entered the name of a Place that was not suggested and
+                // pressed the Enter key, or the Place Details request failed.
+                window.alert("No details available for input: '" + place.name + "'");
+                return;
+            }
 
-          // If the place has a geometry this will present it on a map.
-          if (place.geometry.viewport) {
-            map.fitBounds(place.geometry.viewport);
-          } else {
-            map.setCenter(place.geometry.location);
-            map.setZoom(17);  
-          }
-          marker.setPosition(place.geometry.location);
-          marker.setVisible(true);
+            // If the place has a geometry this will present it on a map.
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            }
+            else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(17);
+            }
+            marker.setPosition(place.geometry.location);
+            marker.setVisible(true);
 
-          var address = '';
-          if (place.address_components) {
-            address = [
-              (place.address_components[0] && place.address_components[0].short_name || ''),
-              (place.address_components[1] && place.address_components[1].short_name || ''),
-              (place.address_components[2] && place.address_components[2].short_name || '')
-            ].join(' ');
-          }
+            var address = '';
+            if (place.address_components) {
+                address = [
+                    (place.address_components[0] && place.address_components[0].short_name || ''),
+                    (place.address_components[1] && place.address_components[1].short_name || ''),
+                    (place.address_components[2] && place.address_components[2].short_name || '')
+                ].join(' ');
+            }
 
-          infowindowContent.children['place-icon'].src = place.icon;
-          infowindowContent.children['place-name'].textContent = place.name;
-          infowindowContent.children['place-address'].textContent = address;
-          infowindow.open(map, marker);
+            infowindowContent.children['place-icon'].src = place.icon;
+            infowindowContent.children['place-name'].textContent = place.name;
+            infowindowContent.children['place-address'].textContent = address;
+            infowindow.open(map, marker);
         });
 
         // Sets a listener on a radio button to change the filter type on Places
         // Autocomplete.
         function setupClickListener(id, types) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function() {
-            autocomplete.setTypes(types);
-          });
+            var radioButton = document.getElementById(id);
+            radioButton.addEventListener('click', function() {
+                autocomplete.setTypes(types);
+            });
         }
 
         setupClickListener('changetype-all', []);
@@ -315,10 +323,10 @@
 
         document.getElementById('use-strict-bounds')
             .addEventListener('click', function() {
-              console.log('Checkbox clicked! New state=' + this.checked);
-              autocomplete.setOptions({strictBounds: this.checked});
+                console.log('Checkbox clicked! New state=' + this.checked);
+                autocomplete.setOptions({ strictBounds: this.checked });
             });
-        
+
         // Autocomplete end
 
         var locations = [
