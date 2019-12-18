@@ -222,6 +222,7 @@
 
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
+            scaleControl: true,
             center: {
                 lat: 53.382790,
                 lng: -7.707616
@@ -230,6 +231,14 @@
                 mapTypeIds: ['satellite', 'styled_map']
             }
         });
+
+        var allIreland = new google.maps.LatLngBounds(
+            new google.maps.LatLng(50.999929, -10.854492),
+            new google.maps.LatLng(55.354135, -5.339355));
+
+        map.fitBounds(allIreland);
+
+
 
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
@@ -242,16 +251,21 @@
 
         // Restrict Search to just Ireland
 
-        var options = {
-            componentRestrictions: { country: 'ie' }
-        };
+        // **** var options = {
+        // ****     componentRestrictions: { country: 'ie' }
+        // **** };
 
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
-        var autocomplete = new google.maps.places.Autocomplete(input, options);
+        var autocomplete = new google.maps.places.Autocomplete(input, {
+            bounds: allIreland,
+            strictBounds: true
+        });
+        // var autocomplete = new google.maps.places.Autocomplete(input);
+        // **** var autocomplete = new google.maps.places.Autocomplete(input, options);
 
         // Bind the map's bounds (viewport) property to the autocomplete object,
         // so that the autocomplete requests use the current map bounds for the
@@ -265,14 +279,14 @@
         var infowindow = new google.maps.InfoWindow();
         var infowindowContent = document.getElementById('infowindow-content');
         infowindow.setContent(infowindowContent);
-        var marker = new google.maps.Marker({
+        var hmarker = new google.maps.Marker({
             map: map,
             anchorPoint: new google.maps.Point(0, -29)
         });
 
         autocomplete.addListener('place_changed', function() {
             infowindow.close();
-            marker.setVisible(false);
+            hmarker.setVisible(false);
             var place = autocomplete.getPlace();
             if (!place.geometry) {
                 // User entered the name of a Place that was not suggested and
@@ -289,8 +303,8 @@
                 map.setCenter(place.geometry.location);
                 map.setZoom(17);
             }
-            marker.setPosition(place.geometry.location);
-            marker.setVisible(true);
+            hmarker.setPosition(place.geometry.location);
+            hmarker.setVisible(true);
 
             var address = '';
             if (place.address_components) {
@@ -304,7 +318,7 @@
             infowindowContent.children['place-icon'].src = place.icon;
             infowindowContent.children['place-name'].textContent = place.name;
             infowindowContent.children['place-address'].textContent = address;
-            infowindow.open(map, marker);
+            infowindow.open(map, hmarker);
         });
 
         // Sets a listener on a radio button to change the filter type on Places
@@ -321,11 +335,12 @@
         setupClickListener('changetype-establishment', ['establishment']);
         setupClickListener('changetype-geocode', ['geocode']);
 
-        document.getElementById('use-strict-bounds')
-            .addEventListener('click', function() {
-                console.log('Checkbox clicked! New state=' + this.checked);
-                autocomplete.setOptions({ strictBounds: this.checked });
-            });
+        // document.getElementById('use-strict-bounds')
+        //     .addEventListener('click', function() {
+        //         console.log('Checkbox clicked! New state=' + this.checked);
+        //         // **** autocomplete.setOptions({ strictBounds: this.checked });
+        //         autocomplete.setOptions({ strictBounds: true });
+        //     });
 
         // Autocomplete end
 
