@@ -17,7 +17,7 @@ section {
 
 section a {
     text-decoration: none;
-    /*color: #008559;*/
+    color: #008559;
 }
 
 .btn:hover {
@@ -70,6 +70,14 @@ body {
     font-family: "Special Elite", cursive;
     font-weight: 400;
     font-size: 30px;
+    text-decoration: none;
+}
+
+.title span:hover {
+    color: #A39161;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .information {
@@ -206,8 +214,9 @@ form {
 .pac-card {
     margin: 10px;
     border-radius: 2px 0 0 2px;
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     outline: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     background-color: #fff;
@@ -259,7 +268,7 @@ form {
 
 /*----------------Media Queries----------------s*/
 
-/*Button width inside navbar-toggler-icon*/
+/*Title size in navbar*/
 
 @media(max-width: 576px) {
     .title {
