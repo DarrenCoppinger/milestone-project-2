@@ -233,7 +233,10 @@
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
                 position: google.maps.ControlPosition.BOTTOM_CENTER
             },
-            fullscreenControl: false,
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_CENTER
+            },
             zoomControlOptions: {
                 position: google.maps.ControlPosition.RIGHT_CENTER
             },

@@ -102,7 +102,7 @@ The google maps interface has be augmented in a number of ways.
 
 Firstly the map is not the google maps default but a styled version. This version aims to provide a retro feel and blend in with the websites old-school aesthetic.
 
-The map controls have been customised to so that the map style control buttons are located at the bottomo of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been turned off.
+The map controls have been customised to so that the map style control buttons are located at the bottomo of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been moved to the center of the right hand side of the interface.
 
 A search box (or Place Autocomplete card) with autocomplete functionality has been included in the map, this is achieve using a google "Place Autocomplete widget". Radio buttons in the search box allow the user tp filter the types of predictions that the autocomplete returns. These filters are by establishments, address and geocodes. The searches in this box have been limited to the Ireland of Ireland as much as is possible this is achieved using the strictBounds function and defining the coordinates around Ireland. 
 
@@ -194,26 +194,15 @@ This website was tested on multiple browsers. They included:
 
 #### Map
 
-1. Navbar
-    1. Visit the Home page on a desktop sized screen (lg)
-    2. Hover over the Name Header text "Writers of Ireland" to check that the hover effects work.
-    3. Click the Name Header text "Writers of Ireland" to check that it links to the Home page.
-    4. Hover over each navbar item to check the hover effect works for each one.
-    5. Click on each one of the navbar buttons to ensure that each links to the correct page.
-    6. Alter the screen size from desktop size down to small devices (sm) size to check that the navbar is responsive. At that size the navbar changes to the toggler icon.
-    7. Click the toggler icon to check that the drop-down menu activates.
-    8. Hover over each of the drop-down menu buttons to make sure the hover effect activates
-    9. Click each of the drop-down menu buttons to make sure that they links to the correct page.
-2. Embedded Google Map API
+1. Repeat Navbar checks as described in step one of the Home section
+2. Embedded Google Map Place Autocomplete Card, check that the searches using the seach bar in the card filter prediction based on which radio button is press (All, Establishments, Addresses or Geocodes)
+3. Check that the zoom, full screen and streetview buttons as well as the styled map and satellite image option buttons are all in their correct positions and work.
+4. Click on a cluster on the map to ensure that the maps sooms to the location of a cluster to reveal the cluster in that area.
+5. Click on all markers to ensure that they launch and the the text, images and links are correct.
+6. Repeat footer checks as described in step four of the Home section 
+7. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
-
-4. Footer
-    1. Visit the Home page on a desktop sized screen (lg)
-    2. Hover over each of the footer social media buttons to ensure that they react to correctly
-    3. Click each of the social media buttons to ensure that they launch the correct social media account in another page
-    4. Alter the screen size from desktop size down to mobile (sm) size to check that footer is responsive. At the sm screen size the footer should reform into two rows of two columns.
-5.  Responsinator
-    1. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
+It was noted during the testing that for some of the infowindows on a small screen size that the infowindow could be obscured by the Place Autocomplete card at the top of the map viewport. The size of the images in the infowindows was reduced to lessen this effect however, a slight issue still remains. However, a user would be able to reposition the infowindow on the map to read it and to close it down.
 
 #### Submissions
 
