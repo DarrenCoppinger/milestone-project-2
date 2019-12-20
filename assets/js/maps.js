@@ -459,6 +459,7 @@
             ["James Joyce House", "<div>" +
                 "<h3>James Joyce House</h3>" +
                 "<p> Stately 18 th - century Georgian residence & setting for Joyce 's short story, 'The Dead.'</p>" +
+                "<p><img src='./assets/images/james-joyce-house.jpg' class='rounded mx-auto d-block' alt='James Joyce House image'></p>" +
                 "</div>"
             ],
             ["James Joyce Tower & Museum", "<div>" +
@@ -472,7 +473,7 @@
                 "<h3>James Joyce Centre</h3>" +
                 "<p>The James Joyce Centre is a museum in Dublin, Ireland, dedicated to promoting an understanding of the life and works of James Joyce</p>" +
                 "<p>For more information <a href='https://jamesjoyce.ie/' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
-                "<p><img src='./assets/images/james-joyce-centre.jpg' class='rounded mx-auto d-block' alt='ames Joyce Tower & Museum image'></p>" +
+                "<p><img src='./assets/images/james-joyce-centre.jpg' class='rounded mx-auto d-block' alt='James Joyce Tower & Museum image'></p>" +
                 "</div>"
             ],
             ["Oscar Wilde House", "<div>" +
@@ -487,13 +488,15 @@
                 "<h3>Kilcolman Castle</h3>" +
                 "<p>Kilcolman Castle is a tower located in County Cork. It was once the residence of the poet Edmund Spenser.</p>" +
                 "<p>For more information <a href='https://www.libraryireland.com/IrishPictures/IV-Kilcolman-Castle.php' target='_blank'><span class='sr-only'>Click Here</span>Click Here</a></p>" +
-                "<p><img src='./assets/images/kilcolman-castle.jpg' class='rounded mx-auto d-block' alt='Kilcolman Castle'></p>" +
+                "<p><img src='./assets/images/kilcolman-castle.jpg' class='rounded d-block' alt='Kilcolman Castle'></p>" +
                 "</div>"
             ]
         ];
 
         var gmarkers = [];
-        var ginfowindow = new google.maps.InfoWindow({});
+        var ginfowindow = new google.maps.InfoWindow({
+            maxHeight: 300
+        });
         for (var i = 0; i < locations.length; i++) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),

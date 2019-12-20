@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Special+Elite&display=swap');
 
-
 /*----------------padding/margins/text----------------s*/
-
 row {
     margin-left: 0;
     margin-right: 0;
@@ -55,12 +53,10 @@ main {
     padding: 0 0 60px;
 }
 
-
 html {
     position: relative;
     min-height: 100%;
 }
-
 
 body {
     margin: 0 0 60px;
@@ -93,14 +89,12 @@ body {
 }
 
 /*----------------carousel----------------*/
-
 .carousel-container {
     margin: 0;
     padding: 0;
 }
 
 /*----------------footer----------------*/
-
 footer {
     color: #000000;
     margin: 50px 0 0;
@@ -178,19 +172,16 @@ footer {
 
 
 /*----------------Map----------------*/
-
 #map {
     min-height: 100vh;
 }
 
 /*----------------navbar----------------*/
-
 .bg-color {
     background-color: #008559;
 }
 
 /*----------------jumbotron----------------*/
-
 .jumbo-color {
     background-color: #dfd2ae;
 }
@@ -200,7 +191,6 @@ footer {
 }
 
 /*----------------form----------------*/
-
 form {
     margin: 25px 0;
 }
@@ -210,7 +200,6 @@ form {
 }
 
 /*----------------PAC----------------*/
-
 .pac-card {
     margin: 10px;
     border-radius: 2px 0 0 2px;
@@ -269,7 +258,6 @@ form {
 /*----------------Media Queries----------------s*/
 
 /*Title size in navbar*/
-
 @media(max-width: 576px) {
     .title {
         font-size: 20px;

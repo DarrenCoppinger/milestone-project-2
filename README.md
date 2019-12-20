@@ -13,17 +13,16 @@ A website designed to gather together information on interesting literary sites 
 
 This website will present a literary sensibility providing a sense of the heritage of Irish literary history.
 
-The fonts were chosen to give a classic feel, so serif types were used. The fonts were sourced from Google Fonts and are as follows:
-* Fairplay Display
+The fonts were chosen to give a classic writer feel so a typewriter like font was chosen for the headings with a complementary font for the bodies of text. The fonts were sourced from Google Fonts and are as follows:
 * Special Elite
-
+* Oswald
 
 ## UX
 
 ### Design Objectives:
 
 * Is the content appropriate for the audience:
-The audience for this website will be english speaking tourists and literary fans, theatre goers and artists. The audience is likely a young technology savvy audience and will likely access the site on mobile devices. A mobile first approach was considered appropriate for this type of audience. Although the website will accommodate all visitors its primary audience will be technology literate.
+The audience for this website will be english speaking tourists and literary fans, and writers. The audience is likely a young technology savvy audience and will likely access the site on mobile devices. A mobile first approach was considered appropriate for this type of audience. Although the website will accommodate all visitors its primary audience will be technology literate.
 
 * Is the content relevant?
 
@@ -45,50 +44,74 @@ A standard website has been chosen as the method to distribute this information 
 
 The product that we are trying to sell is the centralised repository for interesting literary locations around Ireland.
 
-* What value are we trying to add to is?
+* What value are we trying to add to this?
 
+By providing a map to show the geographical locations of these sites tourists and interested parties will be able to plan trips to cities and regions based on the interesting sites available there.
 
 * What has been done like this before?
- 
+
+To the developers knowlegde this is the first of this type of site developed focusing on Irish literature.
 
     
 * What are the technology considerations 
 
-
+A website is an appropriate technology to reach the widest possible audience and allows the use of the Google Maps API.
 
 * Why would a user want this product? What’s worth doing?
 
+Through interviews with  potential users of this website a list of development priorities were established. An importance versus viability analysis was also conducted, the results of which are as follows:
 
+<a href="https://ibb.co/V2V7D0K"><img src="https://i.ibb.co/V2V7D0K/importance-v-viability-ms2.jpg" alt="importance-v-viability-ms2" border="0"></a>
 
+The development priorities for this project are as follows:
+1.	Provide central location to hold literary locations around Ireland
+2.	Provide a mechanism for displaying literary locations around Ireland 
+3.	Create a mechanism for the submission of new location from interested parties
+4.	Provide central location for all social media links
+5.	Develop section dedicated to selected authors and highlight all locations associate with them
 
 ### User stories
 
+* A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
+* A member of the general public is researching or is interested in the literary/cultural hertiage of region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about their connect to the place. 
+* A promoter of a literary museum/site or regional tourist office staff member visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary attraction in my area.
+
 
 ### Wireframe
+* <a href="https://ibb.co/1z5dm89">Home</a>
+* <a href="https://ibb.co/qCmR387">Map</a>
+* <a href="https://ibb.co/x8gdB0D">Submissions</a>
+* <a href="https://ibb.co/T2RqxT9">Writers</a>
 
 
 
 ## Features
 ### Existing Features
+### All Pages
+At the top of each page has the website title and responsive navigation bar at the top of the page. The title also acts as a "Home" button.
 
-
+On the footer of each page are social media icons link the the Writers of Ireland social media profiles.
 
 #### Home
+The page has a carousel which rotates between mages of different Irish writers and has previous and next controls on the left and right of the images respectively.
 
-#### About
+The page includes an "About Us" section which is contained inside a jumbotron. At the bottom of the jumbotron there are links in the form of buttons linking to the other pages of the website and explaining their function. 
 
+#### Map
+The Map page shows a display of a Google Maps API embedded map. The map is focused on Ireland.
 
-#### Writing 
+The google maps interface has be augmented in a number of ways. 
 
+Firstly the map is not the google maps default but a styled version. This version aims to provide a retro feel and blend in with the websites old-school aesthetic.
 
-### Gallery 
+The map controls have been customised to so that the map style control buttons are located at the bottomo of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been turned off.
 
-### Contact
+The a search with autocomplete functionality has been included in the map. The searches in this box have been limited to the Ireland of Ireland as much as is possible.
 
 
 
 ### Features left to Implement
-
+Due to time constraints the writers page of the website was not implemented.
 
 
 ## Technologies Used
@@ -117,31 +140,46 @@ This website was tested on multiple browsers. They included:
 ### User Stories Testing
 
 
+* A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
+
+1. A tourist sees the home page of the website and reads the about section.
+2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button. 
+3. They go to the map page of the website and explore the map by zooming in on the region of the map that they are interested in.
+4. They click on the marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
+
+* A member of the general public is researching or is interested in the literary/cultural hertiage of region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about their connect to the place.
+* 
+1. A member of the general public sees the home page of the website and reads the about section.
+2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button. 
+3. They go to the map page of the website and searchs for a particpular city or town and looking at the markered literary locations in that area
+4. They click on the marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
+* A promoter of a literary museum/site or regional tourist office staff member visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary attraction in my area.
+
+1. A promotor or tourist office staff member visits the site looking for a way to promote locations in their area.
+2. They sees the home page of the website and reads the about section and explore the site.
+3. They click the button beside the following text "click here to submit a location you wish to be included on our map"
+4. They fill in the form with their name, email and description of the location that they wish to submit. This information is then sent to the site administrator/moderator for review and if the information is relevent to the site it will be added to the map. 
+
+
+* A promoter of a literary museum or site visits the site: I am reasearching ways to promote my business and find this website, I want to contact the website to add my business to the map.
+
 ### Manual testing of elements and functionality on each page
 
 #### Home
 
 1. Navbar
     1. Visit the Home page on a desktop sized screen (lg)
-    2. Hover over the Name Header text "Neasa O'Callaghan" to check that the hover effects work.
-    3. Click the Name Header text "Neasa O'Callaghan" to check that it links to the Home page.
-    4. Hover over each navbar button to check the hover effect works for each one.
+    2. Hover over the Name Header text "Writers of Ireland" to check that the hover effects work.
+    3. Click the Name Header text "Writers of Ireland" to check that it links to the Home page.
+    4. Hover over each navbar item to check the hover effect works for each one.
     5. Click on each one of the navbar buttons to ensure that each links to the correct page.
-    6. Alter the screen size from desktop size down to mobile (sm) size to check that the navbar is responsive. At that size the navbar changes to the toggler icon and the roles Header "Playwright|Producer" text moves into the navbar to save vertical space.
-    7. Click the toggler icon to check that the drop-down menu activates and that the text is centred.
+    6. Alter the screen size from desktop size down to small devices (sm) size to check that the navbar is responsive. At that size the navbar changes to the toggler icon.
+    7. Click the toggler icon to check that the drop-down menu activates.
     8. Hover over each of the drop-down menu buttons to make sure the hover effect activates
     9. Click each of the drop-down menu buttons to make sure that they links to the correct page.
-2. Hero Image
-    1. Visit the Home page on a desktop sized screen (lg)
-    2. Alter the screen size from desktop size down to mobile to ensure the clients face is always on screen and that the call to action button is always placed correctly and doesn't obscure the image.
-    3. Hover over the call to action button on top of hero image to ensure it reacts
-    4. Click the call to action button to ensure that it bring you to the correct page.
-3. Carousel
-    1. Visit the Home page on a desktop sized screen (lg) and scroll to the carousel in the "Neasa's Upcoming Work" section
+2. Carousel
+    1. Visit the Home page and see the carousel under the navbar
     2. Click the forward and back arrows on either side of the slides 
-    3. Hover over the highlight "Arcola Theatre" hyperlink to ensure it reacts
-    4. Click "Arcola Theatre" hyperlink to ensure it opens a new page and goes to correct website
-    5. Alter the screen size from desktop size down to mobile (sm) size, check that the cousel caption will stops being displayed and the description of the image becomes a text box underneath the carousel.
 4. Footer
     1. Visit the Home page on a desktop sized screen (lg)
     2. Hover over each of the footer social media buttons to ensure that they react to correctly
@@ -149,27 +187,22 @@ This website was tested on multiple browsers. They included:
     4. Alter the screen size from desktop size down to mobile (sm) size to check that footer is responsive. At the sm screen size the footer should reform into two rows of two columns.
 5. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
-#### About
+#### Map
 
-#### Writing
+#### Submissions
 
-
-#### Gallery 
-
-
-#### Contact
 
 
 ## Development
 
-This project was developed using the IDE Colud9. Updates to the project were committed to git. These updates where then pushed to GitHub where they were stored in a public directory.
+This project was developed using the IDE Cloud9. Updates to the project were committed to git. These updates where then pushed to GitHub where they were stored in a public directory.
 
 Committing and pushing updates was done through cloud9s inbuilt functionality.
 
 To deploy these pages to GitHub pages for the GitHub repository, the following method was used.
 1. Logged into my GitHub account (https://github.com/DarrenCoppinger)
 2. Go to Repository tab.
-3. Click the repository called "playwright-milestone-project"
+3. Click the repository called "milestone-project-2"
 4. Go to the "Settings" tab at the top of the page and click it.
 5. Scroll down the "Settings" page to the "GitHub Pages" section.
 6. In the "Sources" subsection select "Master Branch" from the drop-down menu currently labelled none. This refreshes the page and publishes the project.
@@ -190,13 +223,7 @@ To clone or copy this project from GitHub follow these steps:
 
 ## Credits
 ### Media
-The photos on the site were found through google images searchs for images in the public domain. 
-
-### Content
-
-
-### Acknowledgements
-
+All images used on this website were found using google images advanced search feature to find images in the public domain.
 
 #### Disclaimer
 
