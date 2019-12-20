@@ -83,8 +83,6 @@ The development priorities for this project are as follows:
 * <a href="https://ibb.co/x8gdB0D">Submissions</a>
 * <a href="https://ibb.co/T2RqxT9">Writers</a>
 
-
-
 ## Features
 ### Existing Features
 ### All Pages
@@ -106,9 +104,11 @@ Firstly the map is not the google maps default but a styled version. This versio
 
 The map controls have been customised to so that the map style control buttons are located at the bottomo of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been turned off.
 
-The a search with autocomplete functionality has been included in the map. The searches in this box have been limited to the Ireland of Ireland as much as is possible.
+A search box (or Place Autocomplete card) with autocomplete functionality has been included in the map, this is achieve using a google "Place Autocomplete widget". Radio buttons in the search box allow the user tp filter the types of predictions that the autocomplete returns. These filters are by establishments, address and geocodes. The searches in this box have been limited to the Ireland of Ireland as much as is possible this is achieved using the strictBounds function and defining the coordinates around Ireland. 
 
+Google marker clustering has also been applied to the map to allow markers placed close together to be combined when the maps is zoomed out.
 
+Infowindows have been included on all markers on the map. When a particular marker is clicked an infowindow will be displayed with information on the location and image and a link for futher information on location or associated writer.
 
 ### Features left to Implement
 Due to time constraints the writers page of the website was not implemented.
@@ -204,6 +204,7 @@ This website was tested on multiple browsers. They included:
     7. Click the toggler icon to check that the drop-down menu activates.
     8. Hover over each of the drop-down menu buttons to make sure the hover effect activates
     9. Click each of the drop-down menu buttons to make sure that they links to the correct page.
+2. Embedded Google Map API
 
 
 4. Footer
@@ -223,8 +224,10 @@ This website was tested on multiple browsers. They included:
     3. Submit the form with an empty email address and check that an error messages appears
     3. Submit the form with an invalid email address and check that an error messages appears when you do so
     4. Submit the form with an empty project description field and check that an error messages appears when you do so
-    5. Hover over "Send Project Details" button to ensure is reacts
-3. Resize page down to check that the form is responsive to the change in width and never goes beyond 60% of the page width.
+    5. Hover over "Submit" button to ensure is reacts
+    6. Check that page resets when the submit button is clicked
+    7. Check that email is received at email address link to the EmailJS account
+3. Resize page down to check that the form is responsive to the change in width and never goes beyond 80% of the page width.
 4. Repeat footer checks as described in step four of the Home section 
 5. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 

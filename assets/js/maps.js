@@ -246,8 +246,8 @@
 
 
         var allIreland = new google.maps.LatLngBounds(
-            new google.maps.LatLng(50.999929, -10.854492),
-            new google.maps.LatLng(55.354135, -5.339355));
+            new google.maps.LatLng(51.081482, -10.762186),
+            new google.maps.LatLng(55.343419, -5.397540));
 
         map.fitBounds(allIreland);
 
@@ -261,10 +261,6 @@
         var input = document.getElementById('pac-input');
 
         // Restrict Search to just Ireland
-
-        // **** var options = {
-        // ****     componentRestrictions: { country: 'ie' }
-        // **** };
 
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
@@ -346,13 +342,6 @@
         setupClickListener('changetype-address', ['address']);
         setupClickListener('changetype-establishment', ['establishment']);
         setupClickListener('changetype-geocode', ['geocode']);
-
-        // document.getElementById('use-strict-bounds')
-        //     .addEventListener('click', function() {
-        //         console.log('Checkbox clicked! New state=' + this.checked);
-        //         // **** autocomplete.setOptions({ strictBounds: this.checked });
-        //         autocomplete.setOptions({ strictBounds: true });
-        //     });
 
         // Autocomplete end
 

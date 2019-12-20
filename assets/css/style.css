@@ -191,17 +191,13 @@ footer {
 }
 
 /*----------------form----------------*/
-form {
-    margin: 25px 0;
-}
-
 .form-control {
     margin-bottom: 30px;
 }
 
 .center-form {
     padding-top: 15px;
-    margin: 0 auto;
+    margin: 25px auto;
     max-width: 80%;
 }
 
