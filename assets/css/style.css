@@ -199,6 +199,12 @@ form {
     margin-bottom: 30px;
 }
 
+.center-form {
+    padding-top: 15px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
 /*----------------PAC----------------*/
 .pac-card {
     margin: 10px;

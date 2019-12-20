@@ -180,18 +180,53 @@ This website was tested on multiple browsers. They included:
 2. Carousel
     1. Visit the Home page and see the carousel under the navbar
     2. Click the forward and back arrows on either side of the slides 
+3. Jumbotron
+    1. Visit the Home page and see the jumbotron text
+    2. Hoover over both buttons to ensure they react correctly
+    3. Click both buttons to make sure that they bring you to the correct pages.
 4. Footer
     1. Visit the Home page on a desktop sized screen (lg)
     2. Hover over each of the footer social media buttons to ensure that they react to correctly
     3. Click each of the social media buttons to ensure that they launch the correct social media account in another page
     4. Alter the screen size from desktop size down to mobile (sm) size to check that footer is responsive. At the sm screen size the footer should reform into two rows of two columns.
-5. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
+5.  Responsinator
+    1. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
 #### Map
 
+1. Navbar
+    1. Visit the Home page on a desktop sized screen (lg)
+    2. Hover over the Name Header text "Writers of Ireland" to check that the hover effects work.
+    3. Click the Name Header text "Writers of Ireland" to check that it links to the Home page.
+    4. Hover over each navbar item to check the hover effect works for each one.
+    5. Click on each one of the navbar buttons to ensure that each links to the correct page.
+    6. Alter the screen size from desktop size down to small devices (sm) size to check that the navbar is responsive. At that size the navbar changes to the toggler icon.
+    7. Click the toggler icon to check that the drop-down menu activates.
+    8. Hover over each of the drop-down menu buttons to make sure the hover effect activates
+    9. Click each of the drop-down menu buttons to make sure that they links to the correct page.
+
+
+4. Footer
+    1. Visit the Home page on a desktop sized screen (lg)
+    2. Hover over each of the footer social media buttons to ensure that they react to correctly
+    3. Click each of the social media buttons to ensure that they launch the correct social media account in another page
+    4. Alter the screen size from desktop size down to mobile (sm) size to check that footer is responsive. At the sm screen size the footer should reform into two rows of two columns.
+5.  Responsinator
+    1. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
+
 #### Submissions
 
-
+1. Repeat Navbar checks as described in step one of the Home section
+2. Submissions Form
+    1. Submit empty form without any data and check that an error message appears in the first empty field
+    2. Submit the form with an empty Name field and check that a relevant error message appears
+    3. Submit the form with an empty email address and check that an error messages appears
+    3. Submit the form with an invalid email address and check that an error messages appears when you do so
+    4. Submit the form with an empty project description field and check that an error messages appears when you do so
+    5. Hover over "Send Project Details" button to ensure is reacts
+3. Resize page down to check that the form is responsive to the change in width and never goes beyond 60% of the page width.
+4. Repeat footer checks as described in step four of the Home section 
+5. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
 ## Development
 
