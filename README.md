@@ -14,8 +14,8 @@ A website designed to gather together information on interesting literary sites 
 This website will present a literary sensibility providing a sense of the heritage of Irish literary history.
 
 The fonts were chosen to give a classic writer feel so a typewriter like font was chosen for the headings with a complementary font for the bodies of text. The fonts were sourced from Google Fonts and are as follows:
-* Special Elite
-* Oswald
+* <a href="https://fonts.google.com/specimen/Special+Elite" target="_blank">Special Elite</a>
+* <a href="https://fonts.google.com/specimen/Oswald" target="_blank">Oswald</a>
 
 ## UX
 
@@ -62,7 +62,7 @@ A website is an appropriate technology to reach the widest possible audience and
 
 Through interviews with  potential users of this website a list of development priorities were established. An importance versus viability analysis was also conducted, the results of which are as follows:
 
-<a href="https://ibb.co/V2V7D0K"><img src="https://i.ibb.co/WgnbFNT/importance-v-viability-ms2.jpg" alt="importance-v-viability-ms2" border="0"></a>
+<a href="https://ibb.co/V2V7D0K" target="_blank"><img src="https://i.ibb.co/WgnbFNT/importance-v-viability-ms2.jpg" alt="importance-v-viability-ms2" border="0"></a>
 
 The development priorities for this project are as follows:
 1.	Provide central location to hold literary locations around Ireland
@@ -81,10 +81,10 @@ Due to time/resource the final objective was not completed and will be inpliment
 
 
 ### Wireframe
-* <a href="https://ibb.co/1z5dm89">Home</a>
-* <a href="https://ibb.co/qCmR387">Map</a>
-* <a href="https://ibb.co/x8gdB0D">Submissions</a>
-* <a href="https://ibb.co/T2RqxT9">Writers</a>
+* <a href="https://ibb.co/1z5dm89" target="_blank">Home</a>
+* <a href="https://ibb.co/qCmR387" target="_blank">Map</a>
+* <a href="https://ibb.co/x8gdB0D" target="_blank">Submissions</a>
+* <a href="https://ibb.co/T2RqxT9" target="_blank">Writers</a>
 
 ## Features
 ### Existing Features
@@ -124,19 +124,19 @@ This project used:
 * HTML
 * CSS
 * JavaScript
-* <a href="https://fonts.google.com/">Google Fonts</a>
-* <a href="https://c9.io/">Cloud9</a>
-* <a href="https://git-scm.com/">Git</a>
-* <a href="https://getbootstrap.com/">BootstrapCDN</a>
-* <a href="https://jquery.com/">jQuery</a>
-* <a href="https://popper.js.org/">popper.js</a>
-* <a href="https://www.responsinator.com/">Responsinator</a>
-* <a href="https://developers.google.com/maps/documentation">Google Maps Platform</a>
+* <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+* <a href="https://c9.io/" target="_blank">Cloud9</a>
+* <a href="https://git-scm.com/" target="_blank">Git</a>
+* <a href="https://getbootstrap.com/" target="_blank">BootstrapCDN</a>
+* <a href="https://jquery.com/" target="_blank">jQuery</a>
+* <a href="https://popper.js.org/" target="_blank">popper.js</a>
+* <a href="https://www.responsinator.com/" target="_blank">Responsinator</a>
+* <a href="https://developers.google.com/maps/documentation" target="_blank">Google Maps Platform</a>
 
 ## Testing
 Both of the follow validators were used to check the code developed from this project:
-* <a href="https://jigsaw.w3.org/css-validator/">W3C Jigsaw CSS Validator</a>
-* <a href="https://validator.w3.org/">WC3 Markup Validator</a>
+* <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C Jigsaw CSS Validator</a>
+* <a href="https://validator.w3.org/" target="_blank">WC3 Markup Validator</a>
 
 This website was tested on multiple browsers. They included:
 * Google Chrome
@@ -208,6 +208,8 @@ This website was tested on multiple browsers. They included:
 7. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
 It was noted during the testing that for some of the infowindows on a small screen size that the infowindow could be obscured by the Place Autocomplete card at the top of the map viewport. The size of the images in the infowindows was reduced to lessen this effect however, a slight issue still remains. However, a user would be able to reposition the infowindow on the map to read it and to close it down.
+
+During testing it was noted that when a search term was selected in the autocomplete search box the resulting marker would have the same inforwindow information as the last entry in the infowindow content matrix (named content). To fix this issue different variables had to be defined for the markers used in the autocomplete search and the infowindow markers already present on the map.
 
 #### Submissions
 
