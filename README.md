@@ -22,6 +22,7 @@ The fonts were chosen to give a classic writer feel so a typewriter like font wa
 ### Design Objectives:
 
 * Is the content appropriate for the audience:
+
 The audience for this website will be english speaking tourists and literary fans, and writers. The audience is likely a young technology savvy audience and will likely access the site on mobile devices. A mobile first approach was considered appropriate for this type of audience. Although the website will accommodate all visitors its primary audience will be technology literate.
 
 * Is the content relevant?
@@ -32,7 +33,7 @@ Yes the content on this site is a relevant to Irish Literature. Additonal conten
 
 The content is grouped into easily understood sections (Home, Map, Submissions).
 
-The site also aims to have a simple elegan aesthetic to it to reflect the playwright's sense of style. 
+The site also aims to have a old-school retro writing aesthetic to reflect the historic nature of the source material. 
 
 * Is the technology for this content appropriate?
 
@@ -50,7 +51,7 @@ By providing a map to show the geographical locations of these sites tourists an
 
 * What has been done like this before?
 
-To the developers knowlegde this is the first of this type of site developed focusing on Irish literature.
+To the developers knowledge this is the first of this type of site developed focusing on Irish literature. However, many sites make up of the Google Maps API.
 
     
 * What are the technology considerations 
@@ -61,7 +62,7 @@ A website is an appropriate technology to reach the widest possible audience and
 
 Through interviews with  potential users of this website a list of development priorities were established. An importance versus viability analysis was also conducted, the results of which are as follows:
 
-<a href="https://ibb.co/V2V7D0K"><img src="https://i.ibb.co/V2V7D0K/importance-v-viability-ms2.jpg" alt="importance-v-viability-ms2" border="0"></a>
+<a href="https://ibb.co/V2V7D0K"><img src="https://i.ibb.co/WgnbFNT/importance-v-viability-ms2.jpg" alt="importance-v-viability-ms2" border="0"></a>
 
 The development priorities for this project are as follows:
 1.	Provide central location to hold literary locations around Ireland
@@ -70,11 +71,13 @@ The development priorities for this project are as follows:
 4.	Provide central location for all social media links
 5.	Develop section dedicated to selected authors and highlight all locations associate with them
 
+Due to time/resource the final objective was not completed and will be inplimented at a later stage of development of this site.
+
 ### User stories
 
-* A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
-* A member of the general public is researching or is interested in the literary/cultural hertiage of region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about their connect to the place. 
-* A promoter of a literary museum/site or regional tourist office staff member visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary attraction in my area.
+1. A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
+2. A member of the general public is researching or is interested in the literary/cultural hertiage in a specific region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about writers connected to that place. 
+3. A promoter of a literary museum/site or regional tourist office staff member who visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary attraction in my area.
 
 
 ### Wireframe
@@ -86,12 +89,12 @@ The development priorities for this project are as follows:
 ## Features
 ### Existing Features
 ### All Pages
-At the top of each page has the website title and responsive navigation bar at the top of the page. The title also acts as a "Home" button.
+The website has a responsive navigation bar and title at the top of the page. The title also acts as a "Home" button.
 
 On the footer of each page are social media icons link the the Writers of Ireland social media profiles.
 
 #### Home
-The page has a carousel which rotates between mages of different Irish writers and has previous and next controls on the left and right of the images respectively.
+The page has a carousel which transition with a fade between images of different Irish writers. The carousel also has previous and next control buttons on the left and right of the images, respectively.
 
 The page includes an "About Us" section which is contained inside a jumbotron. At the bottom of the jumbotron there are links in the form of buttons linking to the other pages of the website and explaining their function. 
 
@@ -102,9 +105,11 @@ The google maps interface has be augmented in a number of ways.
 
 Firstly the map is not the google maps default but a styled version. This version aims to provide a retro feel and blend in with the websites old-school aesthetic.
 
-The map controls have been customised to so that the map style control buttons are located at the bottomo of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been moved to the center of the right hand side of the interface.
+The map controls have been customised to so that the map style control buttons are located at the bottom of the map in the center of the interface. The zoom and street view controls have also been moved to the center of the right hand side of the interface. The full screen control feature has also been moved to the center of the right hand side of the interface.
 
-A search box (or Place Autocomplete card) with autocomplete functionality has been included in the map, this is achieve using a google "Place Autocomplete widget". Radio buttons in the search box allow the user tp filter the types of predictions that the autocomplete returns. These filters are by establishments, address and geocodes. The searches in this box have been limited to the Ireland of Ireland as much as is possible this is achieved using the strictBounds function and defining the coordinates around Ireland. 
+A search box (or Place Autocomplete Card) with autocomplete functionality has been included in the map, this is achieve using a google "Place Autocomplete widget". Radio buttons in the search box allow the user to filter the types of predictions that the autocomplete returns. These filters are by establishments, address and geocodes. 
+
+The searches in this box have also been limited to the Republic of Ireland and Northern Ireland, this is achieved using the strictBounds function and defining the coordinates around the island of Ireland. 
 
 Google marker clustering has also been applied to the map to allow markers placed close together to be combined when the maps is zoomed out.
 
@@ -118,6 +123,7 @@ Due to time constraints the writers page of the website was not implemented.
 This project used:
 * HTML
 * CSS
+* JavaScript
 * <a href="https://fonts.google.com/">Google Fonts</a>
 * <a href="https://c9.io/">Cloud9</a>
 * <a href="https://git-scm.com/">Git</a>
@@ -140,28 +146,25 @@ This website was tested on multiple browsers. They included:
 ### User Stories Testing
 
 
-* A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
+1. A tourist is planning a trip to Ireland visits the site: I am traveling to Ireland and want to learn more about it's literary history, I find this site and use it to help plan my trip.
+    1. A tourist sees the home page of the website and reads the about section.
+    2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button next to it. 
+    3. They go to the map page of the website and explore the map by zooming in on the region of the map that they are interested in.
+    4. They click on a marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
 
-1. A tourist sees the home page of the website and reads the about section.
-2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button. 
-3. They go to the map page of the website and explore the map by zooming in on the region of the map that they are interested in.
-4. They click on the marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
+2. A member of the general public is researching or is interested in the literary/cultural hertiage of region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about their connect to the place.
+    1. A member of the general public sees the home page of the website and reads the about section.
+    2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button. 
+    3. They go to the map page of the website and, in the search box card, type in the name of the area they are in.
+    4. They select their location from the autocomplete searchs results (a particpular city or town on the island of Ireland) and look at the markered literary locations in that area.
+    5. They click on the marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
 
-* A member of the general public is researching or is interested in the literary/cultural hertiage of region of Ireland: I am interested in notable literary/cultural figures in a particular area and wish to find out more about their connect to the place.
-* 
-1. A member of the general public sees the home page of the website and reads the about section.
-2. The see the text "click here to explore our map and to discover literary locations all over Ireland" and click the button. 
-3. They go to the map page of the website and searchs for a particpular city or town and looking at the markered literary locations in that area
-4. They click on the marker in thier region of interest and read more information on the location, see the image and potential follow the link to get more information on it. 
-* A promoter of a literary museum/site or regional tourist office staff member visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary attraction in my area.
-
-1. A promotor or tourist office staff member visits the site looking for a way to promote locations in their area.
-2. They sees the home page of the website and reads the about section and explore the site.
-3. They click the button beside the following text "click here to submit a location you wish to be included on our map"
-4. They fill in the form with their name, email and description of the location that they wish to submit. This information is then sent to the site administrator/moderator for review and if the information is relevent to the site it will be added to the map. 
-
-
-* A promoter of a literary museum or site visits the site: I am reasearching ways to promote my business and find this website, I want to contact the website to add my business to the map.
+3. A promoter of a literary museum/site or regional tourist office staff member visits the site: I am researching ways to promote attractions in my local area and find the site, I want to contact the website to add in the literary sites in my area.
+    1. A promotor or tourist office staff member visits the site looking for a way to promote locations in their area.
+    2. They sees the home page of the website and reads the about section and explore the site.
+    3. They click the button beside the following text "click here to submit a location you wish to be included on our map"
+    4. They fill in the form on the Submissionss page with their name, email and description of the location that they wish to submit. 
+    5. They clock submit and this information is then sent to the site administrator/moderator for review. If the information is relevent to the site it will be added to the map. 
 
 ### Manual testing of elements and functionality on each page
 
@@ -175,11 +178,12 @@ This website was tested on multiple browsers. They included:
     5. Click on each one of the navbar buttons to ensure that each links to the correct page.
     6. Alter the screen size from desktop size down to small devices (sm) size to check that the navbar is responsive. At that size the navbar changes to the toggler icon.
     7. Click the toggler icon to check that the drop-down menu activates.
-    8. Hover over each of the drop-down menu buttons to make sure the hover effect activates
+    8. Hover over each of the drop-down menu buttons to make sure the hover effect activates.
     9. Click each of the drop-down menu buttons to make sure that they links to the correct page.
 2. Carousel
-    1. Visit the Home page and see the carousel under the navbar
-    2. Click the forward and back arrows on either side of the slides 
+    1. Visit the Home page and see the carousel under the navbar.
+    2. Click the forward and back arrows on either side of the slides.
+    3. Wait to see that the fade transition works correctly for carousel images.
 3. Jumbotron
     1. Visit the Home page and see the jumbotron text
     2. Hoover over both buttons to ensure they react correctly
@@ -199,6 +203,7 @@ This website was tested on multiple browsers. They included:
 3. Check that the zoom, full screen and streetview buttons as well as the styled map and satellite image option buttons are all in their correct positions and work.
 4. Click on a cluster on the map to ensure that the maps sooms to the location of a cluster to reveal the cluster in that area.
 5. Click on all markers to ensure that they launch and the the text, images and links are correct.
+6. Search for a place using search bar and ensure that the markers generated by this search are new markers without text from infowindows added to the maps by the developers.
 6. Repeat footer checks as described in step four of the Home section 
 7. Review of all functionality and responsiveness on mobile screen size by using <a href="https://www.responsinator.com/">Responsinator</a>
 
